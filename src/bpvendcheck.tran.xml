@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_TRAN" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <TSTC>
+    <TCODE>BPVENDCHECK</TCODE>
+    <PGMNA>MDS_BPVEND_LINK_CHECK_REPORT</PGMNA>
+    <DYPNO>0200</DYPNO>
+   </TSTC>
+   <TSTCC>
+    <TCODE>BPVENDCHECK</TCODE>
+    <S_WEBGUI>1</S_WEBGUI>
+    <S_WIN32>X</S_WIN32>
+    <S_PLATIN>X</S_PLATIN>
+   </TSTCC>
+   <TSTCT>
+    <SPRSL>D</SPRSL>
+    <TCODE>BPVENDCHECK</TCODE>
+    <TTEXT>Prüftransaktion GP&lt;-&gt;Kreditor</TTEXT>
+   </TSTCT>
+   <I18N_TPOOL>
+    <TSTCT>
+     <SPRSL>E</SPRSL>
+     <TTEXT>BP&lt;-&gt;Vendor check transaction</TTEXT>
+    </TSTCT>
+    <TSTCT>
+     <SPRSL>F</SPRSL>
+     <TTEXT>Transaction ctrl Partenaire&lt;-&gt;Fourn.</TTEXT>
+    </TSTCT>
+   </I18N_TPOOL>
+  </asx:values>
+ </asx:abap>
+</abapGit>

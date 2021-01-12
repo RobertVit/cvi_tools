@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_DOCT" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <DOC>
+    <item>
+     <DOKIL>
+      <ID>TX</ID>
+      <OBJECT>CVI_NOTE</OBJECT>
+      <LANGU>E</LANGU>
+      <TYP>E</TYP>
+      <VERSION>0001</VERSION>
+      <MASTERLANG>X</MASTERLANG>
+      <TXTLINES>00017</TXTLINES>
+      <DOKSTATE>A</DOKSTATE>
+     </DOKIL>
+     <HEAD>
+      <TDOBJECT>DOKU</TDOBJECT>
+      <TDNAME>CVI_NOTE</TDNAME>
+      <TDID>TX</TDID>
+      <TDSPRAS>E</TDSPRAS>
+      <TDFORM>S_DOCU_SHOW</TDFORM>
+      <TDSTYLE>S_DOCUS1</TDSTYLE>
+      <TDVERSION>00001</TDVERSION>
+      <TDLINESIZE>072</TDLINESIZE>
+     </HEAD>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>Note Checker</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U3</TDFORMAT>
+       <TDLINE>Purpose</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>To help reduce your search effort across multiple individual notes</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>related to CVI Migration process, the Note Checker task provides a</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>central place for consulting note, which is required for the Business</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Partner Synchronization process.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U3</TDFORMAT>
+       <TDLINE>Activities</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>As a part of Read Me, Note Checker gives you a link to a consulting</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>NOTE, which contains the following information:</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>Transport Based Correction Instruction (TCI)- This is an SAP Note</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>containing most of the corrections required for the CVI migration</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>process. All the corrections are bundled into one correction instruction</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>to ease the note implementation procedure. The TCI Note accommodates</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>SAP_APPL corrections relevant for the CVI migration process and not all</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>the notes for the Customer Vendor Integration are included.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>It will also contain the attachment containing the list of individual</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>notes.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+     </LINES>
+    </item>
+   </DOC>
+  </asx:values>
+ </asx:abap>
+</abapGit>

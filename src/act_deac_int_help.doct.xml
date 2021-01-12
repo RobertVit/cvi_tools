@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_DOCT" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <DOC>
+    <item>
+     <DOKIL>
+      <ID>TX</ID>
+      <OBJECT>ACT_DEAC_INT_HELP</OBJECT>
+      <LANGU>E</LANGU>
+      <TYP>E</TYP>
+      <VERSION>0001</VERSION>
+      <MASTERLANG>X</MASTERLANG>
+      <TXTLINES>00014</TXTLINES>
+      <DOKSTATE>A</DOKSTATE>
+     </DOKIL>
+     <HEAD>
+      <TDOBJECT>DOKU</TDOBJECT>
+      <TDNAME>ACT_DEAC_INT_HELP</TDNAME>
+      <TDID>TX</TDID>
+      <TDSPRAS>E</TDSPRAS>
+      <TDFORM>S_DOCU_SHOW</TDFORM>
+      <TDSTYLE>S_DOCUS1</TDSTYLE>
+      <TDVERSION>00001</TDVERSION>
+      <TDLINESIZE>072</TDLINESIZE>
+     </HEAD>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>Activation/Deactivation of Interfaces Pre-Migration</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>UT</TDFORMAT>
+       <TDLINE>&amp;USE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Using this activity, in a CRM-integrated ERP system, you can activate</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>CRM function modules during conversion of Customer/Vendor to Business</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Partner while migrating to SAP S/4HANA.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>UT</TDFORMAT>
+       <TDLINE>&amp;PRECONDITIONS&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>UT</TDFORMAT>
+       <TDLINE>&amp;STANDARD_SETUP&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>UT</TDFORMAT>
+       <TDLINE>&amp;ACTIVITY&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Select the &lt;LS&gt;Call &lt;/&gt;check box for the following function modules:</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>K2</TDFORMAT>
+       <TDLINE>Event,,Object,,Function Module</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>T2</TDFORMAT>
+       <TDLINE>Business Partner Outbound,,Business Partner,,COM_BUPA_MWX_CREATE_MAIN</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>T2</TDFORMAT>
+       <TDLINE>Business Partner Outbound,,BP Relationship,,COM_BUPA_MWX_CREATE_REL</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>T2</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>T2</TDFORMAT>
+       <TDLINE>Note: Based on your business requirements, you can choose to activate or</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>deactivate other interfaces.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>UT</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+      </TLINE>
+     </LINES>
+    </item>
+   </DOC>
+  </asx:values>
+ </asx:abap>
+</abapGit>

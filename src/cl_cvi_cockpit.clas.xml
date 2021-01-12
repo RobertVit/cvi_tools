@@ -1,0 +1,205 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>CL_CVI_COCKPIT</CLSNAME>
+    <LANGU>E</LANGU>
+    <DESCRIPT>Utility class for CVI Cockpit</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+    <WITH_UNIT_TESTS>X</WITH_UNIT_TESTS>
+   </VSEOCLASS>
+   <I18N_TPOOL>
+    <item>
+     <LANGUAGE>E</LANGUAGE>
+     <TEXTPOOL>
+      <item>
+       <ID>I</ID>
+       <KEY>001</KEY>
+       <ENTRY>*** User opted to edit a completed stage, resulting in overall task status reset !!! ***</ENTRY>
+       <LENGTH>100</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>002</KEY>
+       <ENTRY>Unsync Data exists</ENTRY>
+       <LENGTH>28</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>003</KEY>
+       <ENTRY>Unsync Customer/Supplier data exists. Do you want to change the status?</ENTRY>
+       <LENGTH>132</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>004</KEY>
+       <ENTRY>Status</ENTRY>
+       <LENGTH>16</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>005</KEY>
+       <ENTRY>Task</ENTRY>
+       <LENGTH>14</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>006</KEY>
+       <ENTRY>Changed At</ENTRY>
+       <LENGTH>20</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>007</KEY>
+       <ENTRY>Change Log</ENTRY>
+       <LENGTH>21</LENGTH>
+      </item>
+     </TEXTPOOL>
+    </item>
+   </I18N_TPOOL>
+   <I18N_LINES>
+    <item>
+     <LANGUAGE>E</LANGUAGE>
+    </item>
+   </I18N_LINES>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_CVI_COCKPIT</CLSNAME>
+     <CMPNAME>CLASS_CONSTRUCTOR</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>CLASS_CONSTRUCTOR</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_CVI_COCKPIT</CLSNAME>
+     <CMPNAME>DETERMINE_STAGE_STATUS</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Determine each stage status based on Task satus</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_CVI_COCKPIT</CLSNAME>
+     <CMPNAME>DISPLAY_LOGS</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Display logs for Stage</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_CVI_COCKPIT</CLSNAME>
+     <CMPNAME>DO_BEFORE_ACTION</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Do before action</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_CVI_COCKPIT</CLSNAME>
+     <CMPNAME>DO_BEFORE_ACTION_CVI_LOAD</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Do before action - Only for for CVI Load Screen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_CVI_COCKPIT</CLSNAME>
+     <CMPNAME>DO_BEFORE_TASK_CHANGE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Do something before Task status getting change</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_CVI_COCKPIT</CLSNAME>
+     <CMPNAME>DO_BEFORE_TASK_CNG_CVI_LOAD</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Do before status change - Only for for CVI Load Screen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_CVI_COCKPIT</CLSNAME>
+     <CMPNAME>DO_NAVIGATION</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Perform execute action</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_CVI_COCKPIT</CLSNAME>
+     <CMPNAME>EXECUTE_ACTION</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Perform the action</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_CVI_COCKPIT</CLSNAME>
+     <CMPNAME>EXECUTE_INFO_ACTION</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Perform the action of Information</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_CVI_COCKPIT</CLSNAME>
+     <CMPNAME>GET_DATA</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Fetch data for both Stage &amp; Task from DB</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_CVI_COCKPIT</CLSNAME>
+     <CMPNAME>GET_FCODES_MAPPING_CVI_LOAD</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Maintain all fcodes for CVI Load tab</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_CVI_COCKPIT</CLSNAME>
+     <CMPNAME>GET_METADATA</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Get Status, Stage &amp; Task Master data</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_CVI_COCKPIT</CLSNAME>
+     <CMPNAME>GET_STATUS_DETAILS</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Validate the status</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_CVI_COCKPIT</CLSNAME>
+     <CMPNAME>GET_UNSYNCHRONISED_RECORDS</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Get unsynchronised Customer &amp; Supplier records</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_CVI_COCKPIT</CLSNAME>
+     <CMPNAME>MAINTAIN_NAVIGATION_MAPPING</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Maintain taget mapping details for Execute and Info buttons</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_CVI_COCKPIT</CLSNAME>
+     <CMPNAME>RESET_SUBSEQUENT_STAGES</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Reset subsequent Stage and Task details</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_CVI_COCKPIT</CLSNAME>
+     <CMPNAME>RETURN_APPLICABLE_FCODE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Return list of applicable fcodes</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_CVI_COCKPIT</CLSNAME>
+     <CMPNAME>SAVE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Save data to database</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_CVI_COCKPIT</CLSNAME>
+     <CMPNAME>SAVE_LOGS</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Save logs to database</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_CVI_COCKPIT</CLSNAME>
+     <CMPNAME>SET_APPLICABLE_FCODES</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Maintain all applicable fcodes in the attribute</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_CVI_COCKPIT</CLSNAME>
+     <CMPNAME>SET_METADATA</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Set Status, Stage &amp; Task Master data</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_DOCT" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <DOC>
+    <item>
+     <DOKIL>
+      <ID>TX</ID>
+      <OBJECT>ACT_INT_HELP</OBJECT>
+      <LANGU>E</LANGU>
+      <TYP>E</TYP>
+      <VERSION>0001</VERSION>
+      <MASTERLANG>X</MASTERLANG>
+      <TXTLINES>00019</TXTLINES>
+      <DOKSTATE>A</DOKSTATE>
+     </DOKIL>
+     <HEAD>
+      <TDOBJECT>DOKU</TDOBJECT>
+      <TDNAME>ACT_INT_HELP</TDNAME>
+      <TDID>TX</TDID>
+      <TDSPRAS>E</TDSPRAS>
+      <TDFORM>S_DOCU_SHOW</TDFORM>
+      <TDSTYLE>S_DOCUS1</TDSTYLE>
+      <TDVERSION>00001</TDVERSION>
+      <TDLINESIZE>072</TDLINESIZE>
+     </HEAD>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>Activation/Deactivation of Interfaces Post Migration</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>UT</TDFORMAT>
+       <TDLINE>&amp;USE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Using this activity, you can activate the function modules necessary for</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>synchronization of data between Business Partners and Customers/Vendors.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>UT</TDFORMAT>
+       <TDLINE>&amp;PRECONDITIONS&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>UT</TDFORMAT>
+       <TDLINE>&amp;STANDARD_SETUP&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>UT</TDFORMAT>
+       <TDLINE>&amp;ACTIVITY&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Execute navigates to CRMC_BUT_CALL_FU Check the &lt;LS&gt;Call &lt;/&gt;check box</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>for the following function modules:</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>K2</TDFORMAT>
+       <TDLINE>Event,,Object,,Function Module</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>T2</TDFORMAT>
+       <TDLINE>Business Partner Outbound,,Business Partner and BP Relationship,,</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>=</TDFORMAT>
+       <TDLINE>MDS_BUPA_OUTBOUND</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>T2</TDFORMAT>
+       <TDLINE>CRM Outbound,,Business Partner,,BUPA_OUTBOUND_BPS_FILL_CENTRAL</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>T2</TDFORMAT>
+       <TDLINE>CRM Outbound,,BP Relationship,,BUPA_OUTBOUND_BPR_FILL_CENTRAL</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>T2</TDFORMAT>
+       <TDLINE>Merging of Current Data ,,Business Partner,,MERGE_BUPA_CENTRAL</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>T2</TDFORMAT>
+       <TDLINE>Merging of Current Data,,Business Partner,,MERGE_BUPA_FINSERV</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>T2</TDFORMAT>
+       <TDLINE>Merging of Current Data,,BP Relationship,,MERGE_BUPR_CENTRAL</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>T2</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>T2</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>T2</TDFORMAT>
+       <TDLINE>Note: Based on your business requirements, you can choose to activate or</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>deactivate other interfaces.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>UT</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+      </TLINE>
+     </LINES>
+    </item>
+   </DOC>
+  </asx:values>
+ </asx:abap>
+</abapGit>

@@ -1,0 +1,787 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>CL_CVI_CUSTOMIZING_RESOLVE</CLSNAME>
+    <LANGU>E</LANGU>
+    <DESCRIPT>Class for CVI_CUSTOMIZING_RESOLVE report</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+    <MSG_ID>CVI_CUST_RESOLVE</MSG_ID>
+   </VSEOCLASS>
+   <I18N_TPOOL>
+    <item>
+     <LANGUAGE>E</LANGUAGE>
+     <TEXTPOOL>
+      <item>
+       <ID>I</ID>
+       <KEY>001</KEY>
+       <ENTRY>PPO connection activated</ENTRY>
+       <LENGTH>50</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>002</KEY>
+       <ENTRY>Business process CVI 01 activated</ENTRY>
+       <LENGTH>50</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>003</KEY>
+       <ENTRY>Business process CVI 02 activated</ENTRY>
+       <LENGTH>50</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>004</KEY>
+       <ENTRY>Business process CVI 03 activated</ENTRY>
+       <LENGTH>50</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>005</KEY>
+       <ENTRY>Business process CVI 04 activated</ENTRY>
+       <LENGTH>50</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>006</KEY>
+       <ENTRY>Address number range object is exhausted</ENTRY>
+       <LENGTH>50</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>007</KEY>
+       <ENTRY>Address number range object is about to exhaust</ENTRY>
+       <LENGTH>50</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>008</KEY>
+       <ENTRY>Address number range object is consistent</ENTRY>
+       <LENGTH>82</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>009</KEY>
+       <ENTRY>Error Log</ENTRY>
+       <LENGTH>19</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>010</KEY>
+       <ENTRY>Customer Account Group</ENTRY>
+       <LENGTH>44</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>011</KEY>
+       <ENTRY>Supplier Account Group</ENTRY>
+       <LENGTH>44</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>012</KEY>
+       <ENTRY>Role Description</ENTRY>
+       <LENGTH>26</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>013</KEY>
+       <ENTRY>Contact Person assignment is not active</ENTRY>
+       <LENGTH>78</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>019</KEY>
+       <ENTRY>Save failed:</ENTRY>
+       <LENGTH>22</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>020</KEY>
+       <ENTRY>Tax Category is inconsistent</ENTRY>
+       <LENGTH>56</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>021</KEY>
+       <ENTRY>&apos;Tax Category is consistent</ENTRY>
+       <LENGTH>56</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>022</KEY>
+       <ENTRY>Inconsistent Tax Fields: One or more of the following fields are inconsistent: STCD1, STCD2, STKZU, STCEG</ENTRY>
+       <LENGTH>132</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>023</KEY>
+       <ENTRY>Inconsistent Location/Industry Fields: One or more of the following fields are inconsistent: BBBNR, BBSNR, BUBKZ, BRSCH, VBUND</ENTRY>
+       <LENGTH>132</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>024</KEY>
+       <ENTRY>Inconsistent Bank Fields: One or more of the following fields are inconsistent: BANKS, BANKL, BANKN</ENTRY>
+       <LENGTH>132</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>025</KEY>
+       <ENTRY>Legal Entity Mapping data is consistent</ENTRY>
+       <LENGTH>78</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>026</KEY>
+       <ENTRY>Please select one industry as standard</ENTRY>
+       <LENGTH>76</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>027</KEY>
+       <ENTRY>Customer account group to BP role</ENTRY>
+       <LENGTH>66</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>028</KEY>
+       <ENTRY>Customer account group to BP group</ENTRY>
+       <LENGTH>68</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>029</KEY>
+       <ENTRY>Vendor account group to BP role</ENTRY>
+       <LENGTH>62</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>030</KEY>
+       <ENTRY>Vendor account group to BP group</ENTRY>
+       <LENGTH>64</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>031</KEY>
+       <ENTRY>BP group to customer account group</ENTRY>
+       <LENGTH>64</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>032</KEY>
+       <ENTRY>BP group to vendor account group</ENTRY>
+       <LENGTH>64</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>033</KEY>
+       <ENTRY>Green LED okay</ENTRY>
+       <LENGTH>24</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>034</KEY>
+       <ENTRY>Yellow LED caution</ENTRY>
+       <LENGTH>28</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>035</KEY>
+       <ENTRY>Red LED errors</ENTRY>
+       <LENGTH>24</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>036</KEY>
+       <ENTRY>Department (CVI)</ENTRY>
+       <LENGTH>40</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>037</KEY>
+       <ENTRY>Function (CVI)</ENTRY>
+       <LENGTH>24</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>038</KEY>
+       <ENTRY>Authority (CVI)</ENTRY>
+       <LENGTH>25</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>039</KEY>
+       <ENTRY>VIP Indicator (CVI)</ENTRY>
+       <LENGTH>29</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>040</KEY>
+       <ENTRY>Marital Status (CVI)</ENTRY>
+       <LENGTH>40</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>041</KEY>
+       <ENTRY>Legal Status (CVI)</ENTRY>
+       <LENGTH>28</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>042</KEY>
+       <ENTRY>Card Type (BP)</ENTRY>
+       <LENGTH>24</LENGTH>
+      </item>
+     </TEXTPOOL>
+    </item>
+   </I18N_TPOOL>
+   <I18N_LINES>
+    <item>
+     <LANGUAGE>E</LANGUAGE>
+    </item>
+   </I18N_LINES>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_CVI_CUSTOMIZING_RESOLVE</CLSNAME>
+     <CMPNAME>CHECK_ADDRESS_NUMBER_RANGE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Check Address Number Range Validity</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_CVI_CUSTOMIZING_RESOLVE</CLSNAME>
+     <CMPNAME>CHECK_BP_CUSTOMER_GROUPING</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Check BP to customer grouping</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_CVI_CUSTOMIZING_RESOLVE</CLSNAME>
+     <CMPNAME>CHECK_BP_CUSTOMER_ROLES</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Check BP to customer roles</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_CVI_CUSTOMIZING_RESOLVE</CLSNAME>
+     <CMPNAME>CHECK_BP_VENDOR_GROUPING</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Check BP to Vendor grouping</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_CVI_CUSTOMIZING_RESOLVE</CLSNAME>
+     <CMPNAME>CHECK_BP_VENDOR_ROLES</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Check BP to Vendor roles</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_CVI_CUSTOMIZING_RESOLVE</CLSNAME>
+     <CMPNAME>CHECK_CBP_ACC_GRP_TO_BP_GRP</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Check settings for customer account group to BP grouping</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_CVI_CUSTOMIZING_RESOLVE</CLSNAME>
+     <CMPNAME>CHECK_CBP_ACC_GRP_TO_BP_ROLE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Check settings for customer account group to BP roles</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_CVI_CUSTOMIZING_RESOLVE</CLSNAME>
+     <CMPNAME>CHECK_CBP_CONTACT_ASSIGNMENT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Check contact person assignment activation</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_CVI_CUSTOMIZING_RESOLVE</CLSNAME>
+     <CMPNAME>CHECK_CBP_CONTACT_AUTHORITY</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Check contact person authority</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_CVI_CUSTOMIZING_RESOLVE</CLSNAME>
+     <CMPNAME>CHECK_CBP_CONTACT_DEPARTMENT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Check contact person department</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_CVI_CUSTOMIZING_RESOLVE</CLSNAME>
+     <CMPNAME>CHECK_CBP_CONTACT_FUNCTIONS</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Check contact person Functions</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_CVI_CUSTOMIZING_RESOLVE</CLSNAME>
+     <CMPNAME>CHECK_CBP_CONTACT_MARITAL</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Check contact person marital status</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_CVI_CUSTOMIZING_RESOLVE</CLSNAME>
+     <CMPNAME>CHECK_CBP_CONTACT_VIP_INDIC</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Check contact perosn VIP indicator</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_CVI_CUSTOMIZING_RESOLVE</CLSNAME>
+     <CMPNAME>CHECK_CBP_LEGAL_STATUS</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Check contact person legal status to legal form</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_CVI_CUSTOMIZING_RESOLVE</CLSNAME>
+     <CMPNAME>CHECK_CBP_PAYMENT_CARDS</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Check contact person</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_CVI_CUSTOMIZING_RESOLVE</CLSNAME>
+     <CMPNAME>CHECK_CUSTOMER_BP_GROUPING</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Check customer to BP grouping</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_CVI_CUSTOMIZING_RESOLVE</CLSNAME>
+     <CMPNAME>CHECK_CUSTOMER_BP_ROLES</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Check customer to BP roles</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_CVI_CUSTOMIZING_RESOLVE</CLSNAME>
+     <CMPNAME>CHECK_DATA</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Check data using scenario ID</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_CVI_CUSTOMIZING_RESOLVE</CLSNAME>
+     <CMPNAME>CHECK_DATA_BEFORE_SAVE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Check data before save</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_CVI_CUSTOMIZING_RESOLVE</CLSNAME>
+     <CMPNAME>CHECK_FOR_EDITABLE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Check Authorization and foreign lock</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_CVI_CUSTOMIZING_RESOLVE</CLSNAME>
+     <CMPNAME>CHECK_INDUSTRY_SYSTEM</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Check industry systems data</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_CVI_CUSTOMIZING_RESOLVE</CLSNAME>
+     <CMPNAME>CHECK_PPO_CONNECTION</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Check PPO connection</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_CVI_CUSTOMIZING_RESOLVE</CLSNAME>
+     <CMPNAME>CHECK_REGISTERED_FM</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Check registered function modules</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_CVI_CUSTOMIZING_RESOLVE</CLSNAME>
+     <CMPNAME>CHECK_SYNC_DIRECTION</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Check synchronization direction</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_CVI_CUSTOMIZING_RESOLVE</CLSNAME>
+     <CMPNAME>CHECK_TAX_CATEGORIES</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Check tax categories</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_CVI_CUSTOMIZING_RESOLVE</CLSNAME>
+     <CMPNAME>CHECK_VBP_ACC_GRP_TO_BP_GRP</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Check settings for Vendor account group to BP grouping</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_CVI_CUSTOMIZING_RESOLVE</CLSNAME>
+     <CMPNAME>CHECK_VBP_ACC_GRP_TO_BP_ROLE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Check settings for Vendor account group to BP roles</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_CVI_CUSTOMIZING_RESOLVE</CLSNAME>
+     <CMPNAME>CHECK_VENDOR_BP_GROUPING</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Check Vendor to BP grouping</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_CVI_CUSTOMIZING_RESOLVE</CLSNAME>
+     <CMPNAME>CHECK_VENDOR_BP_ROLES</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Check Vendor to BP roles</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_CVI_CUSTOMIZING_RESOLVE</CLSNAME>
+     <CMPNAME>CLASS_CONSTRUCTOR</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>CLASS_CONSTRUCTOR</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_CVI_CUSTOMIZING_RESOLVE</CLSNAME>
+     <CMPNAME>CONVERT_OUTPUT_TO_INPUT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Convert data from Ouput format to Internal Format</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_CVI_CUSTOMIZING_RESOLVE</CLSNAME>
+     <CMPNAME>FILL_REQUIRED_DATA</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Fill required global data</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_CVI_CUSTOMIZING_RESOLVE</CLSNAME>
+     <CMPNAME>GC_BPC_AUTH</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Tree Control: Node Key</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_CVI_CUSTOMIZING_RESOLVE</CLSNAME>
+     <CMPNAME>GC_BPC_DEPT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Tree Control: Node Key</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_CVI_CUSTOMIZING_RESOLVE</CLSNAME>
+     <CMPNAME>GC_BPC_FUNC</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Tree Control: Node Key</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_CVI_CUSTOMIZING_RESOLVE</CLSNAME>
+     <CMPNAME>GC_BPC_GROUPNG</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Tree Control: Node Key</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_CVI_CUSTOMIZING_RESOLVE</CLSNAME>
+     <CMPNAME>GC_BPC_LEGAL</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Tree Control: Node Key</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_CVI_CUSTOMIZING_RESOLVE</CLSNAME>
+     <CMPNAME>GC_BPC_MARITAL</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Tree Control: Node Key</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_CVI_CUSTOMIZING_RESOLVE</CLSNAME>
+     <CMPNAME>GC_BPC_PAYCARD</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Tree Control: Node Key</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_CVI_CUSTOMIZING_RESOLVE</CLSNAME>
+     <CMPNAME>GC_BPC_ROLES</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Tree Control: Node Key</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_CVI_CUSTOMIZING_RESOLVE</CLSNAME>
+     <CMPNAME>GC_BPC_VIP</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Tree Control: Node Key</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_CVI_CUSTOMIZING_RESOLVE</CLSNAME>
+     <CMPNAME>GC_BPV_GROUPNG</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Tree Control: Node Key</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_CVI_CUSTOMIZING_RESOLVE</CLSNAME>
+     <CMPNAME>GC_BPV_ROLES</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Tree Control: Node Key</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_CVI_CUSTOMIZING_RESOLVE</CLSNAME>
+     <CMPNAME>GC_CBPCP_ACTV</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Tree Control: Node Key</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_CVI_CUSTOMIZING_RESOLVE</CLSNAME>
+     <CMPNAME>GC_CBPCP_AUTH</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Tree Control: Node Key</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_CVI_CUSTOMIZING_RESOLVE</CLSNAME>
+     <CMPNAME>GC_CBPCP_DEPT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Tree Control: Node Key</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_CVI_CUSTOMIZING_RESOLVE</CLSNAME>
+     <CMPNAME>GC_CBPCP_FUNC</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Tree Control: Node Key</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_CVI_CUSTOMIZING_RESOLVE</CLSNAME>
+     <CMPNAME>GC_CBPCP_MARITAL</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Tree Control: Node Key</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_CVI_CUSTOMIZING_RESOLVE</CLSNAME>
+     <CMPNAME>GC_CBPCP_VIP</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Tree Control: Node Key</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_CVI_CUSTOMIZING_RESOLVE</CLSNAME>
+     <CMPNAME>GC_CBPLEG_BANK</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Tree Control: Node Key</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_CVI_CUSTOMIZING_RESOLVE</CLSNAME>
+     <CMPNAME>GC_CBPLEG_LOC</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Tree Control: Node Key</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_CVI_CUSTOMIZING_RESOLVE</CLSNAME>
+     <CMPNAME>GC_CBPLEG_TAX</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Tree Control: Node Key</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_CVI_CUSTOMIZING_RESOLVE</CLSNAME>
+     <CMPNAME>GC_CBP_ACCGRP</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Tree Control: Node Key</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_CVI_CUSTOMIZING_RESOLVE</CLSNAME>
+     <CMPNAME>GC_CBP_ACCROLE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Tree Control: Node Key</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_CVI_CUSTOMIZING_RESOLVE</CLSNAME>
+     <CMPNAME>GC_CBP_GROUPNG</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Tree Control: Node Key</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_CVI_CUSTOMIZING_RESOLVE</CLSNAME>
+     <CMPNAME>GC_CBP_IND_IN</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Tree Control: Node Key</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_CVI_CUSTOMIZING_RESOLVE</CLSNAME>
+     <CMPNAME>GC_CBP_LEGAL</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Tree Control: Node Key</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_CVI_CUSTOMIZING_RESOLVE</CLSNAME>
+     <CMPNAME>GC_CBP_PAYCARD</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Tree Control: Node Key</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_CVI_CUSTOMIZING_RESOLVE</CLSNAME>
+     <CMPNAME>GC_CBP_ROLES</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Tree Control: Node Key</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_CVI_CUSTOMIZING_RESOLVE</CLSNAME>
+     <CMPNAME>GC_GEN_ADDRNR</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Tree Control: Node Key</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_CVI_CUSTOMIZING_RESOLVE</CLSNAME>
+     <CMPNAME>GC_GEN_INDUSTRY</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Tree Control: Node Key</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_CVI_CUSTOMIZING_RESOLVE</CLSNAME>
+     <CMPNAME>GC_GEN_PPO</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Tree Control: Node Key</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_CVI_CUSTOMIZING_RESOLVE</CLSNAME>
+     <CMPNAME>GC_GEN_REGFUN</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Tree Control: Node Key</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_CVI_CUSTOMIZING_RESOLVE</CLSNAME>
+     <CMPNAME>GC_GEN_SYNC</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Tree Control: Node Key</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_CVI_CUSTOMIZING_RESOLVE</CLSNAME>
+     <CMPNAME>GC_GEN_TAX</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Tree Control: Node Key</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_CVI_CUSTOMIZING_RESOLVE</CLSNAME>
+     <CMPNAME>GC_VBP_ACCGRP</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Tree Control: Node Key</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_CVI_CUSTOMIZING_RESOLVE</CLSNAME>
+     <CMPNAME>GC_VBP_ACCROLE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Tree Control: Node Key</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_CVI_CUSTOMIZING_RESOLVE</CLSNAME>
+     <CMPNAME>GC_VBP_GROUPNG</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Tree Control: Node Key</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_CVI_CUSTOMIZING_RESOLVE</CLSNAME>
+     <CMPNAME>GC_VBP_IND_IN</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Tree Control: Node Key</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_CVI_CUSTOMIZING_RESOLVE</CLSNAME>
+     <CMPNAME>GC_VBP_ROLES</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Tree Control: Node Key</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_CVI_CUSTOMIZING_RESOLVE</CLSNAME>
+     <CMPNAME>GET_BP_TO_CONTACT_PERSON</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Get BP -&gt; Contact Person configuration missing</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_CVI_CUSTOMIZING_RESOLVE</CLSNAME>
+     <CMPNAME>GET_CUSTOMIZING_DETAILS</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Get customizing details</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_CVI_CUSTOMIZING_RESOLVE</CLSNAME>
+     <CMPNAME>GET_MAPPING_OUT_TO_IN</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Get mapping out to in for save</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_CVI_CUSTOMIZING_RESOLVE</CLSNAME>
+     <CMPNAME>GET_SCENARIO_MAINT_DET</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Get the Maintainence details for each scenario</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_CVI_CUSTOMIZING_RESOLVE</CLSNAME>
+     <CMPNAME>GV_ICON_ARROW_LEFT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Character field of length 40</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_CVI_CUSTOMIZING_RESOLVE</CLSNAME>
+     <CMPNAME>GV_ICON_ARROW_RIGHT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Character field of length 40</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_CVI_CUSTOMIZING_RESOLVE</CLSNAME>
+     <CMPNAME>GV_ICON_CHECKED</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Character field of length 40</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_CVI_CUSTOMIZING_RESOLVE</CLSNAME>
+     <CMPNAME>GV_ICON_GREEN</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Character field of length 40</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_CVI_CUSTOMIZING_RESOLVE</CLSNAME>
+     <CMPNAME>GV_ICON_INCOMPLETE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Character field of length 40</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_CVI_CUSTOMIZING_RESOLVE</CLSNAME>
+     <CMPNAME>GV_ICON_RED</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Character field of length 40</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_CVI_CUSTOMIZING_RESOLVE</CLSNAME>
+     <CMPNAME>GV_ICON_YELLOW</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Character field of length 40</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_CVI_CUSTOMIZING_RESOLVE</CLSNAME>
+     <CMPNAME>INITIALIZE_ICONS</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Initialize icons</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_CVI_CUSTOMIZING_RESOLVE</CLSNAME>
+     <CMPNAME>INSERT_RECORD</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Insert Record</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_CVI_CUSTOMIZING_RESOLVE</CLSNAME>
+     <CMPNAME>IS_MAINTAINENCE_EXIST</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Retun true if input need to be enabled</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_CVI_CUSTOMIZING_RESOLVE</CLSNAME>
+     <CMPNAME>LOCK_VIEW</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Enqueue/Deque the View</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_CVI_CUSTOMIZING_RESOLVE</CLSNAME>
+     <CMPNAME>PREPARE_MESSAGE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Write message logs</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_CVI_CUSTOMIZING_RESOLVE</CLSNAME>
+     <CMPNAME>READ_DOCUMENTATION</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Read documentations</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_CVI_CUSTOMIZING_RESOLVE</CLSNAME>
+     <CMPNAME>SAVE_DATA</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Perform save data</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_CVI_CUSTOMIZING_RESOLVE</CLSNAME>
+     <CMPNAME>SET_SCENARIO_MAINT_DET</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Set the Maintainence details for each scenario</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

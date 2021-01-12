@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_DOCT" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <DOC>
+    <item>
+     <DOKIL>
+      <ID>TX</ID>
+      <OBJECT>CVI_LIBRARY</OBJECT>
+      <LANGU>E</LANGU>
+      <TYP>E</TYP>
+      <VERSION>0001</VERSION>
+      <MASTERLANG>X</MASTERLANG>
+      <TXTLINES>00028</TXTLINES>
+      <DOKSTATE>A</DOKSTATE>
+     </DOKIL>
+     <HEAD>
+      <TDOBJECT>DOKU</TDOBJECT>
+      <TDNAME>CVI_LIBRARY</TDNAME>
+      <TDID>TX</TDID>
+      <TDSPRAS>E</TDSPRAS>
+      <TDFORM>S_DOCU_SHOW</TDFORM>
+      <TDSTYLE>S_DOCUS1</TDSTYLE>
+      <TDVERSION>00001</TDVERSION>
+      <TDLINESIZE>072</TDLINESIZE>
+     </HEAD>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>CVI LIBRARY</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>This task will launch a consulting NOTE containing the following</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>additional information around the Business Partner approach and other</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>synchronization scenarios-</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>Central Note: 2265093 - S4TWL - Business Partner Approach</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>Note 2713963 - FAQ: CVI - Customer Vendor Integration for system</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>conversion to S/4HANA</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>help.sap.com -&gt; https://help.sap.com/viewer/74b0b157c81944ffaac6ebc07245</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>=</TDFORMAT>
+       <TDLINE>b9dc/1809.002/de-DE/45653b5856de0846e10000000a441470.html</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>CVI Enhancement Framework: Note 2309153 - BP_CVI: Guideline Version 1.14</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>for customer enhancements in CVI in SAP S/4HANA releases</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>CRM-Integration Notes:</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B2</TDFORMAT>
+       <TDLINE>Note 2285062 - S4TWL: SAP CRM and SAP S/4HANA, On-Premise-Edition</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B2</TDFORMAT>
+       <TDLINE>Note 2283810 - Customizing SAP S/4 HANA, On-Premise Edition and SAP CRM</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B2</TDFORMAT>
+       <TDLINE>Note 1968132 - Business Partner Replikation zwischen CRM und ECC mit</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>aktiver CVI (ECC 617!!!)</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>Solution for inconsistent GUIDs:</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B2</TDFORMAT>
+       <TDLINE>Note 2654430 - Data exchange between the CRM and S4 is not possible as</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>GUID of the Business Partners are different in both the systems for the</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>old business partners.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B2</TDFORMAT>
+       <TDLINE>Note 2674508 - S/4 HANA precheck reports error out for CRM mapping table</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>inconsistencies</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>Employee Integration: Note 2340095 - S4TWL - Conversion of Employees to</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Business Partners</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>API/IDOC/Web-Service: Note 2417298 - Integration of Business Partner</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>with Customer and Supplier Roles</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>Also, refer OpenSAP Course - https://open.sap.com/courses/s4h11 (week 2</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>units 5,6,7)</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+      </TLINE>
+     </LINES>
+    </item>
+   </DOC>
+  </asx:values>
+ </asx:abap>
+</abapGit>

@@ -1,0 +1,1319 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_PROG" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <PROGDIR>
+    <NAME>CVI_CUSTOMIZING_RESOLVE</NAME>
+    <SUBC>M</SUBC>
+    <RLOAD>E</RLOAD>
+    <FIXPT>X</FIXPT>
+    <UCCHECK>X</UCCHECK>
+   </PROGDIR>
+   <DYNPROS>
+    <item>
+     <HEADER>
+      <PROGRAM>CVI_CUSTOMIZING_RESOLVE</PROGRAM>
+      <SCREEN>0100</SCREEN>
+      <LANGUAGE>E</LANGUAGE>
+      <DESCRIPT>landing screen for CVI_CUSTOMIZING_RESOLVE</DESCRIPT>
+      <TYPE>N</TYPE>
+      <NEXTSCREEN>0100</NEXTSCREEN>
+      <LINES>033</LINES>
+      <COLUMNS>193</COLUMNS>
+      <HOLD_DATA>X</HOLD_DATA>
+     </HEADER>
+     <CONTAINERS>
+      <RPY_DYCATT>
+       <TYPE>SCREEN</TYPE>
+       <NAME>SCREEN</NAME>
+      </RPY_DYCATT>
+      <RPY_DYCATT>
+       <TYPE>CUST_CTRL</TYPE>
+       <NAME>CC_0100</NAME>
+       <ELEMENT_OF>SCREEN</ELEMENT_OF>
+       <LINE>001</LINE>
+       <COLUMN>001</COLUMN>
+       <LENGTH>174</LENGTH>
+       <HEIGHT>031</HEIGHT>
+      </RPY_DYCATT>
+     </CONTAINERS>
+     <FIELDS>
+      <RPY_DYFATC>
+       <CONT_TYPE>SCREEN</CONT_TYPE>
+       <CONT_NAME>SCREEN</CONT_NAME>
+       <TYPE>OKCODE</TYPE>
+       <NAME>GV_OK_CODE</NAME>
+       <TEXT>____________________</TEXT>
+       <LENGTH>020</LENGTH>
+       <VISLENGTH>020</VISLENGTH>
+       <HEIGHT>001</HEIGHT>
+       <FORMAT>CHAR</FORMAT>
+       <INPUT_FLD>X</INPUT_FLD>
+      </RPY_DYFATC>
+     </FIELDS>
+     <FLOW_LOGIC>
+      <RPY_DYFLOW>
+       <LINE>PROCESS BEFORE OUTPUT.</LINE>
+      </RPY_DYFLOW>
+      <RPY_DYFLOW>
+       <LINE> MODULE STATUS_0100.</LINE>
+      </RPY_DYFLOW>
+      <RPY_DYFLOW>
+       <LINE>*</LINE>
+      </RPY_DYFLOW>
+      <RPY_DYFLOW>
+       <LINE>PROCESS AFTER INPUT.</LINE>
+      </RPY_DYFLOW>
+      <RPY_DYFLOW>
+       <LINE> MODULE USER_COMMAND_0100.</LINE>
+      </RPY_DYFLOW>
+     </FLOW_LOGIC>
+    </item>
+   </DYNPROS>
+   <CUA>
+    <ADM>
+     <ACTCODE>000001</ACTCODE>
+     <PFKCODE>000001</PFKCODE>
+    </ADM>
+    <STA>
+     <RSMPE_STAT>
+      <CODE>PF_STATUS_100</CODE>
+      <MODAL>D</MODAL>
+      <ACTCODE>000001</ACTCODE>
+      <PFKCODE>000001</PFKCODE>
+      <BUTCODE>0001</BUTCODE>
+      <INT_NOTE>PF status for screen 100</INT_NOTE>
+     </RSMPE_STAT>
+    </STA>
+    <FUN>
+     <RSMPE_FUNT>
+      <CODE>BACK</CODE>
+      <TEXTNO>001</TEXTNO>
+      <TEXT_TYPE>S</TEXT_TYPE>
+      <FUN_TEXT>Back</FUN_TEXT>
+     </RSMPE_FUNT>
+     <RSMPE_FUNT>
+      <CODE>CANC</CODE>
+      <TEXTNO>001</TEXTNO>
+      <TEXT_TYPE>S</TEXT_TYPE>
+      <TEXT_NAME>ICON_CANCEL</TEXT_NAME>
+      <ICON_ID>@0W@</ICON_ID>
+      <FUN_TEXT>Cancel</FUN_TEXT>
+     </RSMPE_FUNT>
+     <RSMPE_FUNT>
+      <CODE>EXIT</CODE>
+      <TEXTNO>001</TEXTNO>
+      <TEXT_TYPE>S</TEXT_TYPE>
+      <FUN_TEXT>Exit</FUN_TEXT>
+     </RSMPE_FUNT>
+     <RSMPE_FUNT>
+      <CODE>SAVE</CODE>
+      <TEXTNO>001</TEXTNO>
+      <TEXT_TYPE>S</TEXT_TYPE>
+      <TEXT_NAME>ICON_SYSTEM_SAVE</TEXT_NAME>
+      <ICON_ID>@2L@</ICON_ID>
+      <FUN_TEXT>Save</FUN_TEXT>
+     </RSMPE_FUNT>
+    </FUN>
+    <PFK>
+     <RSMPE_PFK>
+      <CODE>000001</CODE>
+      <PFNO>03</PFNO>
+      <FUNCODE>BACK</FUNCODE>
+      <FUNNO>001</FUNNO>
+     </RSMPE_PFK>
+     <RSMPE_PFK>
+      <CODE>000001</CODE>
+      <PFNO>12</PFNO>
+      <FUNCODE>CANC</FUNCODE>
+      <FUNNO>001</FUNNO>
+     </RSMPE_PFK>
+     <RSMPE_PFK>
+      <CODE>000001</CODE>
+      <PFNO>15</PFNO>
+      <FUNCODE>EXIT</FUNCODE>
+      <FUNNO>001</FUNNO>
+     </RSMPE_PFK>
+    </PFK>
+    <SET>
+     <RSMPE_STAF>
+      <STATUS>PF_STATUS_100</STATUS>
+      <FUNCTION>BACK</FUNCTION>
+     </RSMPE_STAF>
+     <RSMPE_STAF>
+      <STATUS>PF_STATUS_100</STATUS>
+      <FUNCTION>CANC</FUNCTION>
+     </RSMPE_STAF>
+     <RSMPE_STAF>
+      <STATUS>PF_STATUS_100</STATUS>
+      <FUNCTION>EXIT</FUNCTION>
+     </RSMPE_STAF>
+     <RSMPE_STAF>
+      <STATUS>PF_STATUS_100</STATUS>
+      <FUNCTION>SAVE</FUNCTION>
+     </RSMPE_STAF>
+    </SET>
+    <DOC>
+     <RSMPE_ATRT>
+      <OBJ_TYPE>A</OBJ_TYPE>
+      <OBJ_CODE>000001</OBJ_CODE>
+      <MODAL>D</MODAL>
+      <INT_NOTE>PF status for screen 100</INT_NOTE>
+     </RSMPE_ATRT>
+     <RSMPE_ATRT>
+      <OBJ_TYPE>B</OBJ_TYPE>
+      <OBJ_CODE>000001</OBJ_CODE>
+      <SUB_CODE>0001</SUB_CODE>
+      <MODAL>D</MODAL>
+      <INT_NOTE>PF status for screen 100</INT_NOTE>
+     </RSMPE_ATRT>
+     <RSMPE_ATRT>
+      <OBJ_TYPE>P</OBJ_TYPE>
+      <OBJ_CODE>000001</OBJ_CODE>
+      <MODAL>D</MODAL>
+      <INT_NOTE>PF status for screen 100</INT_NOTE>
+     </RSMPE_ATRT>
+    </DOC>
+    <TIT>
+     <RSMPE_TITT>
+      <CODE>CVI_CUST_RESOLVE</CODE>
+      <TEXT>CVI Customizing Checks for Synchronization</TEXT>
+     </RSMPE_TITT>
+    </TIT>
+   </CUA>
+   <I18N_TPOOL>
+    <item>
+     <LANGUAGE>E</LANGUAGE>
+     <TEXTPOOL>
+      <item>
+       <ID>R</ID>
+       <ENTRY>Report CVI_CUSTOMIZING_RESOLVE</ENTRY>
+       <LENGTH>30</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>001</KEY>
+       <ENTRY>General Checks</ENTRY>
+       <LENGTH>72</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>002</KEY>
+       <ENTRY>Customer -&gt; BP Checks</ENTRY>
+       <LENGTH>72</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>003</KEY>
+       <ENTRY>Vendor -&gt; BP Checks</ENTRY>
+       <LENGTH>72</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>004</KEY>
+       <ENTRY>BP -&gt; Customer Checks</ENTRY>
+       <LENGTH>72</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>005</KEY>
+       <ENTRY>BP -&gt; Vendor Checks</ENTRY>
+       <LENGTH>72</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>006</KEY>
+       <ENTRY>Synchronization Direction</ENTRY>
+       <LENGTH>72</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>007</KEY>
+       <ENTRY>Connection to PPO</ENTRY>
+       <LENGTH>72</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>008</KEY>
+       <ENTRY>Registered Function Modules</ENTRY>
+       <LENGTH>72</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>009</KEY>
+       <ENTRY>Tax Classification</ENTRY>
+       <LENGTH>72</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>010</KEY>
+       <ENTRY>Address Number Range Validity Check</ENTRY>
+       <LENGTH>72</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>013</KEY>
+       <ENTRY>Select Industry System</ENTRY>
+       <LENGTH>72</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>014</KEY>
+       <ENTRY>Missing Industry Keys - Incoming</ENTRY>
+       <LENGTH>72</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>015</KEY>
+       <ENTRY>Missing Industry Keys - Outgoing</ENTRY>
+       <LENGTH>72</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>017</KEY>
+       <ENTRY>Setting for Business Partner Roles</ENTRY>
+       <LENGTH>72</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>018</KEY>
+       <ENTRY>Setting for Business Partner Groupings</ENTRY>
+       <LENGTH>72</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>019</KEY>
+       <ENTRY>Customer Account Group -&gt; Role</ENTRY>
+       <LENGTH>72</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>020</KEY>
+       <ENTRY>Customer Account Group -&gt; Grouping</ENTRY>
+       <LENGTH>72</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>021</KEY>
+       <ENTRY>Missing Activation</ENTRY>
+       <LENGTH>72</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>022</KEY>
+       <ENTRY>Missing Department Numbers</ENTRY>
+       <LENGTH>72</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>023</KEY>
+       <ENTRY>Missing Functions</ENTRY>
+       <LENGTH>72</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>024</KEY>
+       <ENTRY>Missing Authority</ENTRY>
+       <LENGTH>72</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>025</KEY>
+       <ENTRY>Missing VIP Indicator</ENTRY>
+       <LENGTH>72</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>026</KEY>
+       <ENTRY>Missing Marital Status</ENTRY>
+       <LENGTH>72</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>027</KEY>
+       <ENTRY>Missing Legal Status to Legal Form</ENTRY>
+       <LENGTH>40</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>028</KEY>
+       <ENTRY>Missing Payment Cards</ENTRY>
+       <LENGTH>72</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>035</KEY>
+       <ENTRY>Vendor Account Group -&gt; Role</ENTRY>
+       <LENGTH>72</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>036</KEY>
+       <ENTRY>Vendor Account Group -&gt; Grouping</ENTRY>
+       <LENGTH>72</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>044</KEY>
+       <ENTRY>Contact person</ENTRY>
+       <LENGTH>24</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>101</KEY>
+       <ENTRY>Source Synchronization Object</ENTRY>
+       <LENGTH>58</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>102</KEY>
+       <ENTRY>Target Synchronization Object</ENTRY>
+       <LENGTH>29</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>103</KEY>
+       <ENTRY>Active Indicator</ENTRY>
+       <LENGTH>16</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>104</KEY>
+       <ENTRY>Type</ENTRY>
+       <LENGTH>4</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>105</KEY>
+       <ENTRY>Message</ENTRY>
+       <LENGTH>17</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>107</KEY>
+       <ENTRY>PPO Business Process</ENTRY>
+       <LENGTH>40</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>108</KEY>
+       <ENTRY>Event</ENTRY>
+       <LENGTH>15</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>109</KEY>
+       <ENTRY>Object</ENTRY>
+       <LENGTH>16</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>110</KEY>
+       <ENTRY>Position</ENTRY>
+       <LENGTH>10</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>111</KEY>
+       <ENTRY>Function Module</ENTRY>
+       <LENGTH>25</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>112</KEY>
+       <ENTRY>Call</ENTRY>
+       <LENGTH>10</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>113</KEY>
+       <ENTRY>Tax Category</ENTRY>
+       <LENGTH>22</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>115</KEY>
+       <ENTRY>Description</ENTRY>
+       <LENGTH>21</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>116</KEY>
+       <ENTRY>Type</ENTRY>
+       <LENGTH>14</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>117</KEY>
+       <ENTRY>Status</ENTRY>
+       <LENGTH>16</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>118</KEY>
+       <ENTRY>Number Range</ENTRY>
+       <LENGTH>22</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>119</KEY>
+       <ENTRY>Message</ENTRY>
+       <LENGTH>17</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>121</KEY>
+       <ENTRY>BP Role</ENTRY>
+       <LENGTH>17</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>122</KEY>
+       <ENTRY>Choose Standard Industry System</ENTRY>
+       <LENGTH>31</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>124</KEY>
+       <ENTRY>Description</ENTRY>
+       <LENGTH>21</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>125</KEY>
+       <ENTRY>Direction</ENTRY>
+       <LENGTH>19</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>127</KEY>
+       <ENTRY>BP Grouping</ENTRY>
+       <LENGTH>21</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>128</KEY>
+       <ENTRY>Range</ENTRY>
+       <LENGTH>15</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>129</KEY>
+       <ENTRY>External</ENTRY>
+       <LENGTH>13</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>130</KEY>
+       <ENTRY>Customer Account Group</ENTRY>
+       <LENGTH>44</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>131</KEY>
+       <ENTRY>Same Number</ENTRY>
+       <LENGTH>18</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>132</KEY>
+       <ENTRY>Vendor Account Group</ENTRY>
+       <LENGTH>44</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>133</KEY>
+       <ENTRY>Mandatory</ENTRY>
+       <LENGTH>19</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>134</KEY>
+       <ENTRY>Contact Person Assignment</ENTRY>
+       <LENGTH>50</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>135</KEY>
+       <ENTRY>Department (CVI)</ENTRY>
+       <LENGTH>20</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>137</KEY>
+       <ENTRY>Department (BP)</ENTRY>
+       <LENGTH>24</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>139</KEY>
+       <ENTRY>Function (CVI)</ENTRY>
+       <LENGTH>18</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>141</KEY>
+       <ENTRY>Function (BP)</ENTRY>
+       <LENGTH>22</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>142</KEY>
+       <ENTRY>Authority (CVI)</ENTRY>
+       <LENGTH>19</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>144</KEY>
+       <ENTRY>Power of Attorney (BP)</ENTRY>
+       <LENGTH>25</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>145</KEY>
+       <ENTRY>VIP Indicator(CVI)</ENTRY>
+       <LENGTH>28</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>147</KEY>
+       <ENTRY>VIP Indicator(BP)</ENTRY>
+       <LENGTH>27</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>148</KEY>
+       <ENTRY>Marital Status (CVI)</ENTRY>
+       <LENGTH>24</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>150</KEY>
+       <ENTRY>Marital Status (BP)</ENTRY>
+       <LENGTH>28</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>151</KEY>
+       <ENTRY>Legal Status (CVI)</ENTRY>
+       <LENGTH>22</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>152</KEY>
+       <ENTRY>Legal Form (BP)</ENTRY>
+       <LENGTH>20</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>153</KEY>
+       <ENTRY>Card Type (CVI)</ENTRY>
+       <LENGTH>24</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>154</KEY>
+       <ENTRY>Card Type (BP)</ENTRY>
+       <LENGTH>23</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>156</KEY>
+       <ENTRY>Industry System (CVI)</ENTRY>
+       <LENGTH>25</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>157</KEY>
+       <ENTRY>Industry Key (BP)</ENTRY>
+       <LENGTH>22</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>158</KEY>
+       <ENTRY>Industry Sector</ENTRY>
+       <LENGTH>25</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>159</KEY>
+       <ENTRY>Industry System</ENTRY>
+       <LENGTH>25</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>160</KEY>
+       <ENTRY>Indicator</ENTRY>
+       <LENGTH>42</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>161</KEY>
+       <ENTRY>Customizing</ENTRY>
+       <LENGTH>21</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>162</KEY>
+       <ENTRY>Indutries BP</ENTRY>
+       <LENGTH>22</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>163</KEY>
+       <ENTRY>Select Industry Sector</ENTRY>
+       <LENGTH>44</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>164</KEY>
+       <ENTRY>Display &lt;-&gt; Change</ENTRY>
+       <LENGTH>28</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>165</KEY>
+       <ENTRY>Save</ENTRY>
+       <LENGTH>14</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>166</KEY>
+       <ENTRY>Inconsistent Customizing</ENTRY>
+       <LENGTH>48</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>167</KEY>
+       <ENTRY>Inconsistent Customizing Documentation</ENTRY>
+       <LENGTH>76</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>168</KEY>
+       <ENTRY>Activate function module call</ENTRY>
+       <LENGTH>58</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>M01</KEY>
+       <ENTRY>No records changed, Save not possible</ENTRY>
+       <LENGTH>74</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>M02</KEY>
+       <ENTRY>Exit Editing</ENTRY>
+       <LENGTH>22</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>M03</KEY>
+       <ENTRY>You may lose data, do you wish to proceed without saving?</ENTRY>
+       <LENGTH>114</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>M04</KEY>
+       <ENTRY>Yes</ENTRY>
+       <LENGTH>13</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>M05</KEY>
+       <ENTRY>No</ENTRY>
+       <LENGTH>12</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>M06</KEY>
+       <ENTRY>Data was saved</ENTRY>
+       <LENGTH>24</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>T01</KEY>
+       <ENTRY>Synchronization Direction</ENTRY>
+       <LENGTH>50</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>T02</KEY>
+       <ENTRY>Connection to PPO</ENTRY>
+       <LENGTH>27</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>T03</KEY>
+       <ENTRY>Registered Funtion Modules</ENTRY>
+       <LENGTH>52</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>T04</KEY>
+       <ENTRY>Tax Classification</ENTRY>
+       <LENGTH>28</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>T05</KEY>
+       <ENTRY>Address Number Range Validity Check</ENTRY>
+       <LENGTH>70</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>T08</KEY>
+       <ENTRY>Settings for Business Partner Roles</ENTRY>
+       <LENGTH>72</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>T09</KEY>
+       <ENTRY>Settings for Business Partner Groupings</ENTRY>
+       <LENGTH>78</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>T12</KEY>
+       <ENTRY>Misisng Activation of Contact Persons</ENTRY>
+       <LENGTH>74</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>T13</KEY>
+       <ENTRY>Missing Department Numbers for Contact Persons</ENTRY>
+       <LENGTH>92</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>T14</KEY>
+       <ENTRY>Missing Funtions for Contact Persons</ENTRY>
+       <LENGTH>72</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>T15</KEY>
+       <ENTRY>Missing Authority of Contact Persons</ENTRY>
+       <LENGTH>72</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>T16</KEY>
+       <ENTRY>Missing VIP Indicator for Contact Person</ENTRY>
+       <LENGTH>80</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>T17</KEY>
+       <ENTRY>Missing Marital Status</ENTRY>
+       <LENGTH>44</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>T18</KEY>
+       <ENTRY>Missing Legal Status to Legal Form</ENTRY>
+       <LENGTH>68</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>T19</KEY>
+       <ENTRY>Missing Payment Cards</ENTRY>
+       <LENGTH>42</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>T20</KEY>
+       <ENTRY>Mapping: Customer Account Group -&gt; BP Role</ENTRY>
+       <LENGTH>82</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>T21</KEY>
+       <ENTRY>Mapping: Customer Account Group -&gt; BP Grouping</ENTRY>
+       <LENGTH>92</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>T22</KEY>
+       <ENTRY>Mapping: Vendor Account Group -&gt; BP Role</ENTRY>
+       <LENGTH>84</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>T23</KEY>
+       <ENTRY>Mapping: Vendor Account Group -&gt; BP Grouping</ENTRY>
+       <LENGTH>92</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>T27</KEY>
+       <ENTRY>Choose Industry System</ENTRY>
+       <LENGTH>44</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>T28</KEY>
+       <ENTRY>Missing Industry Keys</ENTRY>
+       <LENGTH>42</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>T29</KEY>
+       <ENTRY>Missing Legal Form to Legal Status</ENTRY>
+       <LENGTH>68</LENGTH>
+      </item>
+     </TEXTPOOL>
+    </item>
+   </I18N_TPOOL>
+   <LONGTEXTS>
+    <item>
+     <DOKIL>
+      <ID>RE</ID>
+      <OBJECT>CVI_CUSTOMIZING_RESOLVE</OBJECT>
+      <LANGU>E</LANGU>
+      <TYP>E</TYP>
+      <VERSION>0001</VERSION>
+      <MASTERLANG>X</MASTERLANG>
+      <TXTLINES>00103</TXTLINES>
+      <DOKSTATE>A</DOKSTATE>
+     </DOKIL>
+     <HEAD>
+      <TDOBJECT>DOKU</TDOBJECT>
+      <TDNAME>CVI_CUSTOMIZING_RESOLVE</TDNAME>
+      <TDID>RE</TDID>
+      <TDSPRAS>E</TDSPRAS>
+      <TDFORM>S_DOCU_SHOW</TDFORM>
+      <TDSTYLE>S_DOCUS1</TDSTYLE>
+      <TDVERSION>00001</TDVERSION>
+      <TDLINESIZE>072</TDLINESIZE>
+     </HEAD>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;PURPOSE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>You can use this program to perform the necessary checks per client. It</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>also provides Customizing resolution program, where you can find out</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>missing customizing entries and the solution to create/correct these</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>entries for each client.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;INTEGRATION&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;PREREQUISITES&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;FEATURES&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U2</TDFORMAT>
+       <TDLINE>&amp;SELECTION&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Choose the required check and execute.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U2</TDFORMAT>
+       <TDLINE>&amp;STANDARD_VARIANTS&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U2</TDFORMAT>
+       <TDLINE>&amp;OUTPUT&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>The program generates an output containing the status of each check that</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>it performs. If the status is green, this indicates that check is</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>successful. If the status is red, you must follow the steps mentioned in</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>this document to resolve the errors.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;ACTIVITIES&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Run each check to view its message logs.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U2</TDFORMAT>
+       <TDLINE>General Settings</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>N1</TDFORMAT>
+       <TDLINE>In this section, you can find the missing customizing entries, and</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>inconsistencies for the following areas:</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B2</TDFORMAT>
+       <TDLINE>&lt;LS&gt;Synchronization Direction&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B2</TDFORMAT>
+       <TDLINE>&lt;LS&gt;Connection to PPO&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B2</TDFORMAT>
+       <TDLINE>&lt;LS&gt;Registered Function Modules&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B2</TDFORMAT>
+       <TDLINE>&lt;LS&gt;Tax Classification&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B2</TDFORMAT>
+       <TDLINE>&lt;LS&gt;Address Number Range Validity Check&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B2</TDFORMAT>
+       <TDLINE>&lt;LS&gt;Select Industry System&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>N1</TDFORMAT>
+       <TDLINE>Choose &lt;LS&gt;Customizing &lt;/&gt;button to navigate to the relevant Customizing</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>activity and add missing data.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>N1</TDFORMAT>
+       <TDLINE>For &lt;LS&gt;Tax Classification &lt;/&gt;errors might occur due to entries that are</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>missing in Customizing tables (but present in Customer/Vendor master</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>tables). To solve this inconsistency, choose &lt;LS&gt;Display &lt;-&gt; Change</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>&lt;/&gt;button to enter required data and &lt;LS&gt;Save&lt;/&gt; your changes.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>N1</TDFORMAT>
+       <TDLINE>For &lt;LS&gt;Select Industry Sys&lt;/&gt;tem, you can choose Standard Industry</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>indicator using the &lt;LS&gt;Display &lt;-&gt; Change&lt;/&gt; button.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U2</TDFORMAT>
+       <TDLINE>Customer -&gt; BP Checks</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>The system checks for missing entries in the direction from Customer to</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Business Partner.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>N1</TDFORMAT>
+       <TDLINE>In this section, you can find missing customizing entries and</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>inconsistencies for the following areas:</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B2</TDFORMAT>
+       <TDLINE>&lt;LS&gt;Setting for Business Partner Roles&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B2</TDFORMAT>
+       <TDLINE>&lt;LS&gt;Setting for Business Partner Groupings&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B2</TDFORMAT>
+       <TDLINE>&lt;LS&gt;Customer Account Group -&gt; Role&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B2</TDFORMAT>
+       <TDLINE>&lt;LS&gt;Customer Account Group -&gt; Grouping&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B2</TDFORMAT>
+       <TDLINE>&lt;LS&gt;Missing Legal Status to Legal Form&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B2</TDFORMAT>
+       <TDLINE>&lt;LS&gt;Missing Payment Cards&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B2</TDFORMAT>
+       <TDLINE>&lt;LS&gt;Missing Industry Keys - Incoming&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>N1</TDFORMAT>
+       <TDLINE>Click &lt;LS&gt;Customizing &lt;/&gt;button to navigate to the relevant Customizing</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>activity and add missing data.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>N1</TDFORMAT>
+       <TDLINE>To correct inconsistencies, choose &lt;LS&gt;Display &lt;-&gt; Change &lt;/&gt;button to</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>enter required data and &lt;LS&gt;Save&lt;/&gt; your changes.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U3</TDFORMAT>
+       <TDLINE>Contact Person</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>N1</TDFORMAT>
+       <TDLINE>You receive the error logs if you have not maintained the mapping of</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>different attributes between customer and Business Partner. You must</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>perform value mapping from the dropdown provided for each of the</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>following sections:</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B2</TDFORMAT>
+       <TDLINE>&lt;LS&gt;Missing Activation&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B2</TDFORMAT>
+       <TDLINE>&lt;LS&gt;Missing Department Numbers&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B2</TDFORMAT>
+       <TDLINE>&lt;LS&gt;Missing Functions&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B2</TDFORMAT>
+       <TDLINE>&lt;LS&gt;Missing Authority&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B2</TDFORMAT>
+       <TDLINE>&lt;LS&gt;Missing VIP Indicator&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B2</TDFORMAT>
+       <TDLINE>&lt;LS&gt;Missing Marital Status&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>N1</TDFORMAT>
+       <TDLINE> Save your changes.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U2</TDFORMAT>
+       <TDLINE>Vendor -&gt; BP Checks</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>The system checks for missing entries in the direction from Vendor to</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Business Partner.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>N1</TDFORMAT>
+       <TDLINE>In this section, you can find missing customizing entries and</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>inconsistencies for the following areas:</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B2</TDFORMAT>
+       <TDLINE>&lt;LS&gt;Setting for Business Partner Roles&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B2</TDFORMAT>
+       <TDLINE>&lt;LS&gt;Setting for Business Partner Groupings&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B2</TDFORMAT>
+       <TDLINE>&lt;LS&gt;Vendor Account Group -&gt; Role&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B2</TDFORMAT>
+       <TDLINE>&lt;LS&gt;Vendor Account Group -&gt; Grouping&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B2</TDFORMAT>
+       <TDLINE>&lt;LS&gt;Missing Industry Keys - Incoming&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>N1</TDFORMAT>
+       <TDLINE>Click &lt;LS&gt;Customizing &lt;/&gt;button to navigate to the relevant Customizing</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>activity and add missing data.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>N1</TDFORMAT>
+       <TDLINE>To correct inconsistencies, choose &lt;LS&gt;Display &lt;-&gt;Change &lt;/&gt;button to</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>enter required data and &lt;LS&gt;Save&lt;/&gt; your changes.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U2</TDFORMAT>
+       <TDLINE>BP -&gt; Customer Checks</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>The system checks for missing entries in the direction from Business</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Partner to Customer.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B2</TDFORMAT>
+       <TDLINE>&lt;LS&gt;Setting for Business Partner Roles&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B2</TDFORMAT>
+       <TDLINE>&lt;LS&gt;Setting for Business Partner Groupings&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B2</TDFORMAT>
+       <TDLINE>&lt;LS&gt;Missing Legal Status to Legal Form&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B2</TDFORMAT>
+       <TDLINE>&lt;LS&gt;Missing Payment Cards&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B2</TDFORMAT>
+       <TDLINE>&lt;LS&gt;Missing Industry Keys - Outgoing&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Contact Person</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>N1</TDFORMAT>
+       <TDLINE>You receive the error logs if you have not maintained the mapping of</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>different attributes between customer and Business Partner. You must</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>perform value mapping from the dropdown provided for each of the</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>following sections:</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B2</TDFORMAT>
+       <TDLINE>&lt;LS&gt;Missing Department Numbers&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B2</TDFORMAT>
+       <TDLINE>&lt;LS&gt;Missing Functions&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B2</TDFORMAT>
+       <TDLINE>&lt;LS&gt;Missing Authority&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B2</TDFORMAT>
+       <TDLINE>&lt;LS&gt;Missing VIP Indicator&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B2</TDFORMAT>
+       <TDLINE>&lt;LS&gt;Missing Marital Status&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>N1</TDFORMAT>
+       <TDLINE>Save your changes.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U2</TDFORMAT>
+       <TDLINE>BP -&gt; Vendor Checks</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>The system checks for missing entries in the direction from Business</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Partner to Vendor.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>N1</TDFORMAT>
+       <TDLINE>In this section, you can find missing customizing entries and</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>inconsistencies for the following areas:</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B2</TDFORMAT>
+       <TDLINE>&lt;LS&gt;Setting for Business Partner Roles&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B2</TDFORMAT>
+       <TDLINE>&lt;LS&gt;Setting for Business Partner Groupings&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B2</TDFORMAT>
+       <TDLINE>&lt;LS&gt;Missing Industry Keys - Outgoing&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>N1</TDFORMAT>
+       <TDLINE>Click &lt;LS&gt;Customizing &lt;/&gt;button to navigate to the relevant Customizing</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>activity and add missing data.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>N1</TDFORMAT>
+       <TDLINE>To correct inconsistencies, choose &lt;LS&gt;Display &lt;-&gt;Change &lt;/&gt;button to</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>enter required data and &lt;LS&gt;Save&lt;/&gt; your changes.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;EXAMPLE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+     </LINES>
+    </item>
+   </LONGTEXTS>
+  </asx:values>
+ </asx:abap>
+</abapGit>
